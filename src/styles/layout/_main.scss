@@ -72,6 +72,7 @@ main {
     margin-bottom: -7px;
     font-size: 14rem;
     color: $white;
+    color: $black;
     // -webkit-text-fill-color: white; /* Will override color (regardless of order) */
     // -webkit-text-stroke-width: 1px;
     // -webkit-text-stroke-color: red;
@@ -83,11 +84,11 @@ main {
     @include respond-to('mobile') {
       margin-top: 3px;
       margin-bottom: 4px;
-      font-size: 4rem;
+      font-size: 5.6rem;
     }
   }
   .nightizm-sub-title {
-    color: $white;
+    color: $black;
     font-family: $font-heading;
     font-size: 17px;
     margin: 0;
@@ -96,9 +97,37 @@ main {
       font-size: 13px;
     }
   }
+  .cta-container {
+    @include respond-to('mobile') {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
   a.nightizm-latest-release {
     color: $black;
-    background: darken(rgba(255, 240, 245, 1.00), 2);
+    background: darken(rgba(255, 240, 245, .6), 1);
+    border: 1px solid $black;
+    border-radius: 2px;
+    padding: 10px 12px;
+    padding-bottom: 5px;
+    padding-right: 38px;
+    padding-right: 6px;
+    margin-top: 0px;
+    margin-right: 6px;
+    font-size: 13px;
+    text-transform: uppercase;
+    transition: all .4s ease;
+    position: relative;
+    @include respond-to('mobile') {
+      margin-top: 15px;
+      margin-right: 0;
+    }
+  }
+  a.cta-subscribe {
+    color: $black;
+    background: darken(rgba(255, 240, 245, .6), 1);
+    border: 1px solid $black;
     border-radius: 2px;
     padding: 10px 12px;
     padding-bottom: 5px;
@@ -108,9 +137,10 @@ main {
     font-size: 13px;
     text-transform: uppercase;
     transition: all .4s ease;
-    position: relative;
+    // position: relative;
+    width: auto;
     @include respond-to('mobile') {
-      // margin-top: 15px;
+      // margin-bottom: 0px;
     }
   }
   // a.nightizm-latest-release::after {
@@ -123,8 +153,10 @@ main {
   //   z-index: 999;
   // }
   a.nightizm-latest-release:focus,
-  a.nightizm-latest-release:hover {
-    background: darken(rgba(255, 240, 245, 1.00), 6);
+  a.nightizm-latest-release:hover,
+  a.cta-subscribe:focus,
+  a.cta-subscribe:hover {
+    background: darken(rgba(255, 240, 245, 1.00), 2);
     transition: all .4s ease;
   }
 }
@@ -195,6 +227,30 @@ main {
     }
   }
   .mailchimp-subscribe {
+    background: #000;
+    color: $white;
+    border: none;
+    border-left: none;
+    padding: 10px 12px;
+    padding-bottom: 5px;
+    text-transform: uppercase;
+    font-size: 13px;
+    transition: .2s all ease;
+    @include respond-to('mobile') {
+      width: 100%;
+      // text-align: left;
+    }
+    &:hover {
+      background: $light-grey;
+      color: $black;
+      border-left: 1px solid $black;
+      transition: .2s all ease;
+      @include respond-to('mobile') {
+        border-left: none;
+      }
+    }
+  }
+    .mailchimp-subscribe {
     background: #000;
     color: $white;
     border: none;

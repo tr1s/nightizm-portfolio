@@ -23,13 +23,6 @@ $(document).ready(function() {
     prevNextButtons: false
   });
 
-  // CKEAR INPUT ON SUBMIT
-  $('.mailchimp-form').submit( function(e) {
-    // e.preventDefault();
-    // console.log('submitted');
-    // this.reset();
-  });
-
   // LOOPING MOON IN ADDRESS BAR
   var f = ['🌑', '🌒', '🌓', '🌔', '🌝', '🌖', '🌗', '🌘'];
   function loop() {
