@@ -4,44 +4,89 @@
 <head>
   <meta charset="UTF-8">
   <title>Nightizm | Seize the Night ☾</title>
-  <meta name="Description" content="LOOK NO FURTHER... ☾">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="Description" content="LOOK NO FURTHER... ☾">
+
+  <!-- Open Graph data / Facebook Card data -->
+  <meta property="og:title" content="Nightizm | 404 ☾">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nightizm.com">
+  <meta property="og:image" content="☾">
+  <meta property="og:image:alt" content="Moon">
+  <meta property="og:description" content="A simple yet thorough webpack starter boilerplate for static websites that acheive high performance and cover all best practices.">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:creator" content="@nightizm">
+
+  <!-- Mobile header color for Chrome, Firefox OS and Opera -->
+  <meta name="theme-color" content="#000">
+  <!-- Mobile header color Windows Phone -->
+  <meta name="msapplication-navbutton-color" content="#000">
+  <!-- Mobile header color for iOS Safari (supports black, black-translucent or default) -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <header class="header">
-      <ul class="nav music-nav">
-        <li><a href="https://facebook.com/nightizm" target="_blank" rel="noopener">FACEBOOK</a></li>
-        <li><a href="https://instagram.com/nightizm" target="_blank" rel="noopener">INSTAGRAM</a></li>
-        <li><a href="https://twitter.com/nightizm" target="_blank" rel="noopener">TWITTER</a></li>
-      </ul>
-    </header>
 
-    <main>
+  <header role="header">
+    <ul class="nav music-nav">
+      <li><a href="https://facebook.com/nightizm" target="_blank" rel="noopener">FACEBOOK</a></li>
+      <li><a href="https://instagram.com/nightizm" target="_blank" rel="noopener">INSTAGRAM</a></li>
+      <li><a href="https://twitter.com/nightizm" target="_blank" rel="noopener">TWITTER</a></li>
+    </ul>
+  </header>
 
-      <!-- FULL WIDTH/HEIGHT CAROUSEL -->
-      <div class="pics-carousel">
-        <img class="pics" src="./images/nightone.jpg" alt="photo of nightizm">
-        <img class="pics" src="./images/nighttwo.jpg" alt="photo of nightizm">
-        <img class="pics" src="./images/nightthree.jpg" alt="photo of nightizm">
-        <img class="pics" src="./images/nightfour.jpg" alt="photo of nightizm">
-        <img class="pics" src="./images/nightfive.jpg" alt="photo of nightizm">
+  <main role=main>
+
+    <!-- FULL WIDTH/HEIGHT CAROUSEL -->
+    <!-- <div class="pics-carousel">
+      <img class="pics" data-flickity-lazyload="https://ik.imagekit.io/tris/nightizm/tr:w-1680/n-photoshoot-1-1_BJVAknNH4.jpg" alt="photo of nightizm">
+      <img class="pics" data-flickity-lazyload="https://ik.imagekit.io/tris/nightizm/tr:w-1680/n-hoxton2_rkj6y2NB4.jpg" alt="photo of nightizm">
+      <img class="pics" data-flickity-lazyload="https://ik.imagekit.io/tris/nightizm/tr:w-1680/n-photoshoot-1-2_S17CJ3VSN.jpg" alt="photo of nightizm">
+      <img class="pics" data-flickity-lazyload="https://ik.imagekit.io/tris/nightizm/tr:w-1680/n-hoxton3_BylERy2VHE.jpg" alt="photo of nightizm">
+    </div> -->
+
+    <!-- POSITION ABSOLUTE CENTERED content -->
+    <div class="nightizm-container">
+      <p class="nightizm-sub-title scramble"></p>
+      <h1 class="nightizm-title">NIGHTIZM</h1>
+
+      <!-- MAILCHIMP FORM content -->
+      <div class="mailchimp" id="mc_embed_signup">
+      <form action="https://bandcamp.us6.list-manage.com/subscribe/post?u=a78d17d9918b5ed97c288e36a&amp;id=70ab802f38" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="mailchimp-form validate" target="_blank" novalidate>
+        <div id="mc_embed_signup_scroll">
+          <div class="mailchimp-input-container mc-field-group">
+            <label for="mce-EMAIL">Email Address </label>
+            <input type="email" value="" name="EMAIL" class="mailchimp-input required email" id="mce-EMAIL" placeholder="Enter your email address..." aria-label="email input">
+            <div class="clear"><input type="submit" value="Newsletter" name="subscribe" id="mc-embedded-subscribe" class="mailchimp-subscribe button"></div>
+          </div>
+          <div id="mce-responses" class="clear">
+            <div class="response" id="mce-error-response" style="display:none"></div>
+            <div class="response" id="mce-success-response" style="display:none"></div>
+          </div>
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_a78d17d9918b5ed97c288e36a_70ab802f38" tabindex="-1" value=""></div>
+        </div>
+      </form>
       </div>
 
-      <!-- POSITION ABSOLUTE CENTERED content -->
-      <div class="nightizm-container">
-        <h1 class="nightizm-title">404</h1>
-      </div>
+      <!-- LATEST RELEASE -->
+      <a href="https://distrokid.com/hyperfollow/nightizm1/boXC" class="nightizm-latest-release">Listen to my latest release</a>
 
-    </main>
+    </div>
 
-    <footer class="footer">
-      <ul class="nav social-nav">
-        <li><a href="https://itunes.apple.com/ca/artist/nightizm/971495473" target="_blank" rel="noopener">APPLE MUSIC</a></li>
-        <li><a href="https://nightizm.bandcamp.com" target="_blank" rel="noopener">BANDCAMP</a></li>
-        <li><a href="https://open.spotify.com/artist/6FKuIQ9er4fKdiJ6paAwzS?si=0zUcFEUJQfWjETWQyow5Wg" target="_blank" rel="noopener">SPOTIFY</a></li>
-      </ul>
-    </footer>
+  </main>
+
+  <footer role="footer">
+    <ul class="nav social-nav">
+      <li><a href="https://itunes.apple.com/ca/artist/nightizm/971495473" target="_blank" rel="noopener">APPLE MUSIC</a></li>
+      <li><a href="https://nightizm.bandcamp.com" target="_blank" rel="noopener">BANDCAMP</a></li>
+      <li><a href="https://open.spotify.com/artist/6FKuIQ9er4fKdiJ6paAwzS?si=0zUcFEUJQfWjETWQyow5Wg" target="_blank" rel="noopener">SPOTIFY</a></li>
+    </ul>
+  </footer>
+
 </body>
 
 </html>
