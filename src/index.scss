@@ -5,12 +5,13 @@
 @import "./styles/utils/mixins";
 @import "./styles/utils/variables";
 
+//! libraries
+@import "./styles/libs/flickity.css";
+
 //! site-wide base styles
 @import "./styles/base/setup"; /* normalize, clearfix, border-box, anti-aliasing, grey-scale */
 @import "./styles/base/typography";
 @import "./styles/base/global";
 
 //! layout
-@import "./styles/layout/header";
-// @import "./styles/layout/main";
-// @import "./styles/layout/footer";
+@import "./styles/layout/main";

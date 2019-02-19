@@ -30,16 +30,10 @@ module.exports = merge(common, {
       test: /\.(jpe?g|png|gif|svg)$/i,
       gifsicle: { // lossless gif compressor
         optimizationLevel: 9
-      },
-      pngquant: ({ // lossy png compressor, remove for default lossless
-        quality: '75'
-      }),
-      plugins: [imageminMozjpeg({ // lossy jpg compressor, remove for default lossless
-        quality: '75'
-      })]
+      }
     }),
     new FaviconsWebpackPlugin({
-      logo: './src/images/tris-package.svg',
+      logo: './src/images/favicon.svg',
       icons: {
         twitter: true,
         windows: true

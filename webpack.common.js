@@ -99,6 +99,11 @@ module.exports = {
       chunkFilename: '[id].css'
     })
   ],
+  externals: {
+    $: 'jquery',
+    jquery: 'jQuery',
+    'window.$': 'jquery',
+  },
   output: {
     filename: 'webpack-bundle.js',
     path: path.resolve(__dirname, 'dist')

@@ -2,8 +2,8 @@
 
 $white: #fff;
 
-$light-grey: #fafafa;
-$grey: #d7d7d7;
+$light-grey: #dfdfdf;
+$grey: #d0d0d0;
 
 $black-ish: #444;
 $black: #09090e;
@@ -17,3 +17,13 @@ $yellow: #fffacd;
 $color-primary: $blue;
 $color-secondary: $pink;
 $color-tertiary: $yellow;
+
+@keyframes blink {
+  0% {
+    opacity: 0
+  }
+
+  100% {
+    opacity: 1
+  }
+}

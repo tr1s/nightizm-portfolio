@@ -1,19 +1,24 @@
-//! import google fonts
-// @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700');
-// OR use @font-face like below
-
-//! import a custom font below
+/* advent-pro-regular - latin */
 @font-face {
-  font-family: 'Libre-Baskerville-Reg';
-  font-display: fallback;
-  src: url('/fonts/LibreBaskerville-Regular.ttf') format('truetype');
-  font-weight: normal;
+  font-family: 'Bodoni 72';
   font-style: normal;
+  font-weight: 400;
+  src: url('fonts/BodoniSvtyTwoITCTT-Book.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/BodoniSvtyTwoITCTT-Book.woff') format('woff');      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* hind-guntur-regular - latin */
+@font-face {
+  font-family: 'Hind Guntur';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Hind Guntur Regular'), local('HindGuntur-Regular'),
+    url('fonts/hind-guntur-v4-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('fonts/hind-guntur-v4-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 //! set font variables
-$font-heading: 'Libre-Baskerville-Reg', 'Georgia', serif;
-$font-body: sans-serif;
+$font-heading: 'Bodoni 72', 'Georgia', serif;
+$font-body: 'Hind Guntur', sans-serif;
 
 
 html {
@@ -29,6 +34,11 @@ body {
 
 h1 {
   font-family: $font-heading, serif;
-  font-size: 1.7rem;
+  font-size: 2rem;
   font-weight: 400;
+  margin: 1rem;
+}
+
+ul.nav {
+  // font-weight: 100;
 }
