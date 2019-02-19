@@ -13,4 +13,4 @@ ___
 I try my best to explain things thoroughly, but if something can be explained more clearly, please feel free to send off a pull request with some suggested edits. Thank you!
 ___
 
-Hope this helped! Follow me on [twitter](https://twitter.com/triscodes) if you're into that. 🌱
+Follow me on my personal [twitter](https://twitter.com/triscodes) if you're into that. 🌱
