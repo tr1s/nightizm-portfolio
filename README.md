@@ -10,7 +10,7 @@ ___
 
 # Contributing:
 
-I try my best to explain things thoroughly, but if something can be explained more clearly, please feel free to send off a pull request with some suggested edits. Thank you!
+If you notice something off please let me know or feel free to send off a pull request with some suggested edits. Thank you!
 ___
 
 Follow me on my personal [twitter](https://twitter.com/triscodes) if you're into that. 🌱
