@@ -9,6 +9,10 @@ header {
   border-bottom: 1px solid $white;
   z-index: 669;
   background: $black;
+  &:hover,
+  &:focus {
+    border-bottom: 1px solid black;
+  }
 }
 
 // SHARED NAV STYLES FOR TOP AND BOTTOM
@@ -38,7 +42,7 @@ ul.nav {
     &:hover,
     &:focus {
       background: rgba(0, 0, 0, 0.9);
-      background: $light-grey;
+      background: lighten($light-grey, 6);
       color: $black;
       transition: .2s all ease;
       // animation: blink 0.16s linear infinite;
@@ -127,6 +131,7 @@ main {
   a.cta-subscribe {
     color: $black;
     background: darken(rgba(255, 240, 245, .6), 1);
+    background: lighten($light-grey, 6);
     border: 1px solid $black;
     border-radius: 2px;
     padding: 10px 12px;
@@ -153,10 +158,13 @@ main {
   //   z-index: 999;
   // }
   a.nightizm-latest-release:focus,
-  a.nightizm-latest-release:hover,
+  a.nightizm-latest-release:hover {
+    background: darken(rgba(255, 240, 245, 1.00), 2);
+    transition: all .4s ease;
+  }
   a.cta-subscribe:focus,
   a.cta-subscribe:hover {
-    background: darken(rgba(255, 240, 245, 1.00), 2);
+    background: $light-grey;
     transition: all .4s ease;
   }
 }
@@ -287,5 +295,8 @@ footer {
   transform: translateX(-50%);
   background: $black;
   z-index: 669;
-
+  &:hover,
+  &:focus {
+    border-top: 1px solid black;
+  }
 }

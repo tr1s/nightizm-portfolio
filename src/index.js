@@ -7,12 +7,6 @@ import './scripts/scramble.js';
 import './scripts/flickity.min.js';
 import './scripts/script.js';
 
-function toggleDarkLight() {
-  let body = document.getElementById("body");
-  let currentClass = body.className;
-  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
-}
-
 $(document).ready(function() {
   $('.pics-carousel').flickity({
     wrapAround: true,
@@ -24,11 +18,10 @@ $(document).ready(function() {
   });
 
   // LOOPING MOON IN ADDRESS BAR
-  var f = ['🌑', '🌒', '🌓', '🌔', '🌝', '🌖', '🌗', '🌘'];
-  function loop() {
-      location.hash = f[Math.floor((Date.now()/100)%f.length)];
-      setTimeout(loop, 50);
-  }
-
-  loop();
+  // var f = ['🌑', '🌒', '🌓', '🌔', '🌝', '🌖', '🌗', '🌘'];
+  // function loop() {
+  //     location.hash = f[Math.floor((Date.now()/100)%f.length)];
+  //     setTimeout(loop, 50);
+  // }
+  // loop();
 });
