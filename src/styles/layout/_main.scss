@@ -112,7 +112,7 @@ main {
   }
   a.nightizm-latest-release {
     color: $black;
-    background: darken(rgba(255, 240, 245, .6), 1);
+    background: rgba(255, 240, 245, .6);
     border: 1px solid $black;
     border-radius: 2px;
     padding: 10px 12px;
@@ -132,8 +132,7 @@ main {
   }
   a.cta-subscribe {
     color: $black;
-    background: darken(rgba(255, 240, 245, .6), 1);
-    background: lighten($light-grey, 6);
+    background: lighten($light-grey, 9);
     border: 1px solid $black;
     border-radius: 2px;
     padding: 10px 12px;
@@ -161,12 +160,12 @@ main {
   // }
   a.nightizm-latest-release:focus,
   a.nightizm-latest-release:hover {
-    background: darken(rgba(255, 240, 245, 1.00), 2);
+    background: darken(rgba(255, 240, 245, 1.00), 1);
     transition: all .4s ease;
   }
   a.cta-subscribe:focus,
   a.cta-subscribe:hover {
-    background: $light-grey;
+    background: lighten($light-grey, 4);
     transition: all .4s ease;
   }
 }
@@ -177,6 +176,7 @@ main {
   left: 0;
   right: 0;
   bottom: 0;
+  z-index: -666;
   filter: grayscale(66%);
   .pics {
     width: 100%;
