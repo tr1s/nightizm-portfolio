@@ -74,7 +74,8 @@ class TextScramble {
 const phrases = [
   'Music Producer',
   'Dj / Selecta',
-  'Creative Coder'
+  'Creative Coder',
+  'Seize the Night'
 ]
 
 const el = document.querySelector('.scramble')

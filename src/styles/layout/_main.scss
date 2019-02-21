@@ -9,10 +9,7 @@ header {
   border-bottom: 1px solid $white;
   z-index: 669;
   background: $black;
-  &:hover,
-  &:focus {
-    border-bottom: 1px solid black;
-  }
+  border-bottom: 1px solid black;
 }
 
 // SHARED NAV STYLES FOR TOP AND BOTTOM
@@ -43,6 +40,7 @@ ul.nav {
     &:focus {
       background: rgba(0, 0, 0, 0.9);
       background: lighten($light-grey, 6);
+      background: $light-grey;
       color: $black;
       transition: .2s all ease;
       // animation: blink 0.16s linear infinite;
@@ -73,7 +71,7 @@ main {
   .nightizm-title {
     margin: 0;
     margin-top: -8px;
-    margin-bottom: -7px;
+    margin-bottom: -8px;
     font-size: 14rem;
     color: $white;
     color: $black;
@@ -81,13 +79,13 @@ main {
     // -webkit-text-stroke-width: 1px;
     // -webkit-text-stroke-color: red;
     @include respond-to('tablet') {
-      margin-top: 8px;
-      margin-bottom: 11px;
+      margin-top: -2px;
+      margin-bottom: 0;
       font-size: 7rem;
     }
     @include respond-to('mobile') {
-      margin-top: 3px;
-      margin-bottom: 4px;
+      margin-bottom: -3px;
+      margin-top: 4px;
       font-size: 5.6rem;
     }
   }
@@ -102,10 +100,14 @@ main {
     }
   }
   .cta-container {
+    margin-top: 8px;
     @include respond-to('mobile') {
       display: flex;
       flex-direction: column-reverse;
       align-items: center;
+    }
+    @include respond-to('mobile') {
+      // margin-top: 7px;
     }
   }
   a.nightizm-latest-release {
@@ -124,7 +126,7 @@ main {
     transition: all .4s ease;
     position: relative;
     @include respond-to('mobile') {
-      margin-top: 15px;
+      margin-top: 20px;
       margin-right: 0;
     }
   }
@@ -294,9 +296,6 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   background: $black;
+  border-top: 1px solid black;
   z-index: 669;
-  &:hover,
-  &:focus {
-    border-top: 1px solid black;
-  }
 }
