@@ -74,7 +74,7 @@ class TextScramble {
 const phrases = [
   'Music Producer',
   'Dj / Selecta',
-  'Creative Coder',
+  'Creative Developer',
   'Seize the Night'
 ]
 
