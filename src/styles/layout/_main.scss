@@ -9,7 +9,6 @@ header {
   border-bottom: 1px solid $white;
   z-index: 669;
   background: $black;
-  border-bottom: 1px solid black;
 }
 
 // SHARED NAV STYLES FOR TOP AND BOTTOM
@@ -38,12 +37,9 @@ ul.nav {
 
     &:hover,
     &:focus {
-      background: rgba(0, 0, 0, 0.9);
-      background: lighten($light-grey, 6);
-      background: $light-grey;
-      color: $black;
+      background: lighten($black, 14);
       transition: .2s all ease;
-      // animation: blink 0.16s linear infinite;
+      animation: blink 0.16s linear infinite;
     }
   }
 
@@ -74,7 +70,6 @@ main {
     margin-bottom: -8px;
     font-size: 14rem;
     color: $white;
-    color: $black;
     // -webkit-text-fill-color: white; /* Will override color (regardless of order) */
     // -webkit-text-stroke-width: 1px;
     // -webkit-text-stroke-color: red;
@@ -90,7 +85,7 @@ main {
     }
   }
   .nightizm-sub-title {
-    color: $black;
+    color: $white;
     font-family: $font-heading;
     font-size: 17px;
     margin: 0;
@@ -111,10 +106,10 @@ main {
     }
   }
   a.nightizm-latest-release {
-    color: $black;
-    background: rgba(255, 240, 245, .6);
-    border: 1px solid $black;
-    border-radius: 2px;
+    color: $white;
+    background: #000;
+    border: 1px solid $white;
+    border-radius: 1px;
     padding: 10px 12px;
     padding-bottom: 5px;
     padding-right: 38px;
@@ -131,10 +126,10 @@ main {
     }
   }
   a.cta-subscribe {
-    color: $black;
-    background: lighten($light-grey, 9);
-    border: 1px solid $black;
-    border-radius: 2px;
+    color: $white;
+    background: #000;
+    border: 1px solid $white;
+    border-radius: 1px;
     padding: 10px 12px;
     padding-bottom: 5px;
     padding-right: 38px;
@@ -143,29 +138,16 @@ main {
     font-size: 13px;
     text-transform: uppercase;
     transition: all .4s ease;
-    // position: relative;
     width: auto;
-    @include respond-to('mobile') {
-      // margin-bottom: 0px;
-    }
   }
-  // a.nightizm-latest-release::after {
-  //   content: url('/images/note.svg');
-  //   width: 20px;
-  //   position: absolute;
-  //   top: 24px;
-  //   right: 10px;
-  //   transform: translateY(-50%);
-  //   z-index: 999;
-  // }
   a.nightizm-latest-release:focus,
   a.nightizm-latest-release:hover {
-    background: darken(rgba(255, 240, 245, 1.00), 1);
+    background: lighten($black, 14);
     transition: all .4s ease;
   }
   a.cta-subscribe:focus,
   a.cta-subscribe:hover {
-    background: lighten($light-grey, 4);
+    background: lighten($black, 14);
     transition: all .4s ease;
   }
 }
@@ -296,6 +278,5 @@ footer {
   left: 50%;
   transform: translateX(-50%);
   background: $black;
-  border-top: 1px solid black;
   z-index: 669;
 }
