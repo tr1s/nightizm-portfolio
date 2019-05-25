@@ -5,6 +5,8 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const ScriptExtHtmlWebpackPlugin = require("script-ext-html-webpack-plugin");
 
+const Critters = require('critters-webpack-plugin');
+
 module.exports = {
   mode: 'development',
   entry: './src/index.js',
@@ -93,6 +95,10 @@ module.exports = {
     }),
     new ScriptExtHtmlWebpackPlugin({
       defaultAttribute: 'defer'
+    }),
+    new Critters({
+      fonts: true,
+      preload: 'swap'
     }),
     new MiniCssExtractPlugin({
       filename: 'webpack-bundle.css',
